@@ -248,6 +248,12 @@ Protected APIs validate user roles before granting access.
 ![Edit Employee](screenshots/updated_employee_details.png)
 
 
+### Delete Employee
+
+
+
+![Delete Employee](screenshots/delete_employee.png)
+
 
 ### Mark Attendance
 
