@@ -231,36 +231,40 @@ Protected APIs validate user roles before granting access.
 
 
 
-![Employee Management](screenshots/employee_login.png)
+![Employee Management](screenshots/employee_list.png)
 
 ### Add Employee
 
 
 
-![Add Employee](screenshots/add_emp.png)
+![Add Employee](screenshots/add_employee.png)
+![Add Employee](screenshots/search_added_employee.png)
 
 ### Edit Employee
 
 
 
-![Edit Employee](screenshots/edit_emp.png)
+![Edit Employee](screenshots/edit_employee_details.png)
+![Edit Employee](screenshots/updated_employee_details.png)
+
+
 
 ### Mark Attendance
 
 
 
-![Mark Attendance](screenshots/mark_att.png)
+![Mark Attendance](screenshots/mark_attendance.png)
 
 ### Attendance Records
 
 
 
-![Attendance Records](screenshots/view_all_att.png)
+![Attendance Records](screenshots/view_all_attendance.png)
 
 ### Attendance Summary
 
 
-![Attendance Summary](screenshots/view_emp_att.png)
+![Attendance Summary](screenshots/attendance_summary.png)
 
 ---
 
@@ -273,11 +277,11 @@ Protected APIs validate user roles before granting access.
 
 
 
-![Employee Attendance Summary](screenshots/attendance1.png)
+![Employee Attendance Summary](screenshots/attendance_summary.png)
 ### Employee Attendance History
 
 
-![Employee Attendance History](screenshots/attendance2.png)
+![Employee Attendance History](screenshots/attendance_history.png)
 
 ---
 
