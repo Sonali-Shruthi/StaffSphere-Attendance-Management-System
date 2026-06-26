@@ -30,21 +30,30 @@ def mark_attendance():
 
     # 1. Check employee exists
     cursor.execute(
-        """
-        SELECT id
-        FROM employees
-        WHERE employee_code = %s
-        """,
-        (employee_code,)
-    )
+    """
+    SELECT id, status
+    FROM employees
+    WHERE employee_code = %s
+    """,
+    (employee_code,)
+)
 
     employee = cursor.fetchone()
-    employee_id = employee[0] if employee else None
+
     if not employee:
         cursor.close()
         return jsonify({
-            "message": "Employee not found"
+        "message": "Employee not found"
         }), 404
+    
+    employee_id = employee[0]
+    employee_status = employee[1]
+
+    if employee_status != "Active":
+        cursor.close()
+        return jsonify({
+            "message": "Cannot mark attendance for inactive employee"
+        }), 400
 
     # 2. Check duplicate attendance (IMPORTANT FINAL VALIDATION)
     cursor.execute(
